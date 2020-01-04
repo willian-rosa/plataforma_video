@@ -1,5 +1,5 @@
 FROM php:7.4.1-fpm-alpine3.11
-RUN apk add --no-cache openssl bash mysql-client wget
+RUN apk add --no-cache openssl bash mysql-client wget nodejs npm
 RUN docker-php-ext-install pdo pdo_mysql
 
 ENV DOCKERIZE_VERSION v0.6.1
